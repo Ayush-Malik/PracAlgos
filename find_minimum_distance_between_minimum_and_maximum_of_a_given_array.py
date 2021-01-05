@@ -39,6 +39,8 @@ for i in range(len(arr)):
         if arr[i] == next:
             if min_dis == -1 or min_dis > i - f_index:
                 min_dis = i - f_index
+            f_index = i
+            next = x + y - next
         if arr[i] == x + y - next:
             f_index = i
 
